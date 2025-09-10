@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maburu Tech Solutions - Business Model Canvas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: #2c3e50;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        header {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .canvas {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 2px;
+            background: #bdc3c7;
+            padding: 2px;
+        }
+        
+        .section {
+            padding: 15px;
+            background: white;
+            min-height: 200px;
+        }
+        
+        .section-header {
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        
+        .section-content {
+            font-size: 14px;
+        }
+        
+        .span-2 {
+            grid-column: span 2;
+        }
+        
+        .key-points {
+            list-style-type: none;
+        }
+        
+        .key-points li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .key-points li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .metric-item {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+            font-size: 13px;
+        }
+        
+        .footer {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+        
+        .print-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .print-btn:hover {
+            background: #2980b9;
+        }
+        
+        @media (max-width: 900px) {
+            .canvas {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .span-2 {
+                grid-column: span 1;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .canvas {
+                grid-template-columns: 1fr;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .highlight {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Maburu Tech Solutions</h1>
+            <p class="subtitle">Business Model Canvas</p>
+        </header>
+        
+        <div class="canvas">
+            <div class="section">
+                <div class="section-header">Key Partners</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>University IT departments</li>
+                        <li>Laptop suppliers</li>
+                        <li>Payment providers (M-Pesa, EcoCash)</li>
+                        <li>Student associations</li>
+                        <li>Bursary programs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Key Activities</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>Laptop repair & maintenance</li>
+                        <li>Software installation</li>
+                        <li>App development & maintenance</li>
+                        <li>Customer support</li>
+                        <li>Marketing & awareness campaigns</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Value Propositions</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>On-campus convenience</li>
+                        <li>Student-affordable pricing</li>
+                        <li>Flexible payment plans</li>
+                        <li>Quick turnaround time</li>
+                        <li>Trusted student-to-student service</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Customer Relationships</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>App-based communication</li>
+                        <li>In-person support</li>
+                        <li>Social media engagement</li>
+                        <li>Loyalty programs</li>
+                        <li>Student ambassadors</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Customer Segments</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>First-year university students</li>
+                        <li>Continuing students</li>
+                        <li>Bursary-dependent students</li>
+                        <li>University staff & lecturers</li>
+                        <li>Local community near campuses</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Key Resources</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>CampusTech app platform</li>
+                        <li>Skilled student technicians</li>
+                        <li>On-campus service points</li>
+                        <li>Laptop inventory</li>
+                        <li>Tools & repair equipment</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Channels</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>CampusTech mobile app</li>
+                        <li>University partnerships</li>
+                        <li>Social media platforms</li>
+                        <li>Student ambassadors</li>
+                        <li>Campus events & workshops</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-header">Cost Structure</div>
+                <div class="section-content">
+                    <ul class="key-points">
+                        <li>App development & maintenance</li>
+                        <li>Technician salaries</li>
+                        <li>Laptop inventory costs</li>
+                        <li>Marketing expenses</li>
+                        <li>Space rental on campuses</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section span-2">
+                <div class="section-header">Revenue Streams</div>
+                <div class="section-content">
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <strong>Service Fees</strong><br>
+                            Repair, software installation, maintenance
+                        </div>
+                        <div class="metric-item">
+                            <strong>Laptop Sales</strong><br>
+                            New and refurbished laptops
+                        </div>
+                        <div class="metric-item">
+                            <strong>Subscription Plans</strong><br>
+                            Premium support packages
+                        </div>
+                        <div class="metric-item">
+                            <strong>Accessory Sales</strong><br>
+                            Laptop accessories and parts
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Maburu Tech Solutions - On-campus laptop services and sales for students in Lesotho</p>
+            <button class="print-btn" onclick="window.print()">Print Canvas</button>
+        </div>
+    </div>
+</body>
+</html>
